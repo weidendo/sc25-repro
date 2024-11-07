@@ -1,4 +1,4 @@
-# SC25 Reproducibility Initiative 
+# SC25 Reproducibility Initiative
 
 ## About
 

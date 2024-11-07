@@ -11,7 +11,7 @@
 
 \usepackage{sc25repro}
 
-% Uncomment/comment the following usetag lines 
+% Uncomment/comment the following usetag lines
 % if you would like to get an explanation or an example.
 % Don't forget to comment them for the final submission.
 \usetag{explanation}
@@ -22,7 +22,7 @@
 \twocolumn[%
 {\begin{center}
 \Huge
-Appendix: Artifact Description/Artifact Evaluation        
+Appendix: Artifact Description/Artifact Evaluation
 \end{center}}
 ]
 
@@ -64,9 +64,9 @@ List the computational artifacts related to this paper along with their respecti
 }
 
 \artexpl{
-Provide a table with the relevant computational artifacts, 
-highlight their relation to the contributions (from above) and 
-point to the elements in the paper that are reproducible by each artifact, e.g., 
+Provide a table with the relevant computational artifacts,
+highlight their relation to the contributions (from above) and
+point to the elements in the paper that are reproducible by each artifact, e.g.,
 which figures or tables were generated with the artifact.
 }
 
@@ -113,7 +113,7 @@ Provide a higher level description of what outcome to expect from the correspond
 }
 
 \artsampl{
-Algorithm A should be faster than Algorithms C and B in all GPU scenarios.    
+Algorithm A should be faster than Algorithms C and B in all GPU scenarios.
 }
 
 \arttime
@@ -123,7 +123,7 @@ Estimate the time required to reproduce the artifact, providing separate estimat
 }
 
 \artsampl{
-The expected computational time of this artifact on GPU X is 20~min.    
+The expected computational time of this artifact on GPU X is 20~min.
 }
 
 \artin
@@ -155,7 +155,7 @@ Detail the requirements for compiling, deploying, and executing the experiments,
 \artcomp
 
 \artexpl{
-Provide an abstract description of the experiment workflow of the artifact. It is important to identify the main tasks (processes) and how they depend on each other. 
+Provide an abstract description of the experiment workflow of the artifact. It is important to identify the main tasks (processes) and how they depend on each other.
 
 A workflow may consist of three tasks: $T_1, T_2$, and $T_3$. The task $T_1$ may generate a specific dataset. This dataset is then used as input by a computational task $T_2$, and the output of $T_2$ is processed by another task $T_3$, which produces the final results (e.g., plots, tables, etc.). State the individual tasks $T_i$ and provide their dependencies, e.g., $T_1 \rightarrow T_2 \rightarrow T_3$.
 
@@ -181,14 +181,14 @@ Provide the same type of information as done for Computational Artifact $A_1$.
 \artin
 
 \artexpl{
-Provide instructions for installing and compiling libraries and code. 
+Provide instructions for installing and compiling libraries and code.
 Offer guidelines on deploying the code to resources.
 }
 
 \artcomp
 
 \artexpl{
-Describe the experiment workflow. 
+Describe the experiment workflow.
 If encapsulated within a workflow description or equivalent (such as a makefile or script), clearly outline the primary tasks and their interdependencies. Detail the main steps in the workflow. Merely instructing to “Run script.sh” is inadequate.
 }
 
@@ -196,8 +196,8 @@ If encapsulated within a workflow description or equivalent (such as a makefile 
 
 \artexpl{
 \begin{itemize}
-    \item Provide a description of the expected results and a methodology for evaluating these results. 
-    \item Explain how the expected results from the experiment workflow correlate with the contributions stated in the article. 
+    \item Provide a description of the expected results and a methodology for evaluating these results.
+    \item Explain how the expected results from the experiment workflow correlate with the contributions stated in the article.
     \item For example, if the article presents results in a figure, the artifact evaluation should also produce a similar figure, depicting the same generalizable outcome. Authors must focus on these aspects to reduce the time required for others to understand and verify an artifact.
 \end{itemize}
 }
