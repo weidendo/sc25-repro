@@ -15,7 +15,7 @@ The AE Appendix can be thought of showing the Reproducibility reviewers that you
 ### Generic hints
 
 Make sure you provide enough information in the AE appendix to make the job of evaluation as easy as possible.
-An evaluation should be possible in less than 8 hours.
+An evaluation must be possible in less than 8 hours.
 To increase the probability for getting the badges for your effort, you will have the chance of submitting a revised AE after a first check by a reviewer.
 In addition, a reviewer may contact you via Linklings. For this, it is the decision of the reviewer to disclose her/his identity. Thus, it is fine for the AE evaluation to become double-open.
 
