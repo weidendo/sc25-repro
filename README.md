@@ -15,3 +15,6 @@ Also, see the supporting [guidelines](for-paper-authors).
 Paper authors should carefully read the instructions on the [SC25 AD/AE Process & Badges page](https://sc25.supercomputing.org/program/papers/reproducibility-appendices-badges/).
 
 
+## For SC25 Reproducibility Committee Members
+
+See [here](for-paper-authors) for the reproducibility report template.
