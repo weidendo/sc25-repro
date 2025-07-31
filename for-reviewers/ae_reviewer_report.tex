@@ -1,31 +1,80 @@
-\documentclass[conference]{IEEEtran}
-
+% Default style of report is standalone report with reviewer name
+%
+% If reviewer does not want to disclose identity to paper authors,
+% the report instead will be anonymously appended to AD/AE appendix.
+% In this case, add "nonacm' as option to documentclass, and
+% uncomment "\setboolean{standalone}{false}" below
+\documentclass[sigconf]{acmart}
+%\documentclass[nonacm,sigconf]{acmart}
 
 \usepackage{cite}
-\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsmath,amsfonts}
 \usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{booktabs}
+
 \usepackage{ae_review}
+\pagenumbering{gobble} % no page numbers
+
+\usepackage{ifthen}
+\newboolean{standalone}
+% TODO: set dependent on whether this is a standalone report
+\setboolean{standalone}{true}
+%\setboolean{standalone}{false}
+
+% provide conference information for standalone report
+% DOI
+\acmDOI{10.475/123_4} % TODO: Update
+% ISBN
+\acmISBN{123-4567-24-567/08/06} % TODO: Update
+%Conference
+\acmConference[SC'25]{The International Conference for High Performance
+Computing, Networking, Storage, and Analysis 2025}{November 2025}{St. Louis, MO, US} 
+\acmYear{2025}
+\copyrightyear{2025}
+\setcopyright{rightsretained}
+
 
 \begin{document}
 
-\title{Artifact Evaluation Report}
-
-\author{\IEEEauthorblockN{Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization} \\
-\textit{name of organization}\\
-City, Country \\
-email address or ORCID}
-\and
-\IEEEauthorblockN{Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization} \\
-\textit{name of organization}\\
-City, Country \\
-email address or ORCID}
+\ifthenelse{\boolean{standalone}}{
+% title for standalone report
+% TODO: replace XXX with paper title
+\title{Reproducibility Report for SC25 Paper\\XXX}
+}{
+\title{Reproducibility Report}
 }
+
+\ifthenelse{\boolean{standalone}}{
+% TODO: if standalone: Name of SC25 Reproducibility Committee member
+\author{Firstname Lastname}
+%\authornote{Note}
+\orcid{1234-5678-9012}
+\affiliation{%
+  \institution{Affiliation}
+  \streetaddress{Address}
+  \city{City} 
+  \state{State} 
+  \postcode{Zipcode}
+  \country{Country}
+}
+\email{email@domain.com}
+}{}
+
+\ifthenelse{\boolean{standalone}}{
+\begin{abstract}
+% TODO: replace XXX with paper title
+% TODO: replace YYY with first author name (+ "et al." if multiple) 
+This reproducibility report provides details about the artifact evaluation done with regards to the Artifact Description and Evaluation appendix of SC25 paper XXX by YYY.
+The work was done as part of the Reproducibility Initiative of SC25.
+The author is a member of the SC25 Reproducibilty Committee.
+\end{abstract}
+
+\keywords{Artifact Evaluation, Reproducibility}
+}{}
+
 
 \maketitle
 
