@@ -17,4 +17,4 @@ Paper authors should carefully read the instructions on the [SC25 AD/AE Process 
 
 ## For SC25 Reproducibility Committee Members
 
-See [here](for-paper-authors) for the reproducibility report template.
+See [here](for-reviewers) for the reproducibility report template.
